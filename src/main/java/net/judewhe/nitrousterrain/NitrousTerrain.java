@@ -12,7 +12,11 @@ public class NitrousTerrain implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
+	// runs on start
 	public void onInitialize() {
+		System.out.println("Is the mod being loaded?");
+
+		// calling all functions at start
 
 	}
 
