@@ -1,0 +1,11 @@
+{
+  "type": "terrain_dimension:my_dimension_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "terrain_dimension:my_dimension",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "minecraft:plains"
+    }
+  }
+}
