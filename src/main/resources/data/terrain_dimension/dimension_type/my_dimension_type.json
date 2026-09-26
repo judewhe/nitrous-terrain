@@ -10,7 +10,7 @@
   "has_ender_dragon_fight": false,
   "coordinate_scale": 1.0,
   "ambient_light": 0.0,
-  "fixed_time": null,
+  "fixed_time": 6000,
   "logical_height": 512,
   "min_y": 0,
   "height": 512,

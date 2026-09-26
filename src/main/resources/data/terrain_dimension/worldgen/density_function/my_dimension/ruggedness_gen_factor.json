@@ -1,0 +1,15 @@
+
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "terrain_dimension:my_dimension/ruggedness_gen",
+    "points": [
+      { "location": -0.6, "value": 0.05, "derivative": 0.0 },
+      { "location": -0.35, "value": 0.1,  "derivative": 0.0 },
+      { "location": -0.1,  "value": 0.4,  "derivative": 0.0 },
+      { "location":  0.05, "value": 1.0,  "derivative": 0.0 },
+      { "location":  0.3,  "value": 1.6,  "derivative": 0.0 },
+      { "location":  0.55, "value": 2.2,  "derivative": 0.0 }
+    ]
+  }
+}

@@ -5,7 +5,7 @@
     "settings": "terrain_dimension:my_dimension",
     "biome_source": {
       "type": "minecraft:fixed",
-      "biome": "minecraft:plains"
+      "biome": "terrain_dimension:null_biome"
     }
   }
 }
