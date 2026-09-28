@@ -3,21 +3,25 @@
   "argument1": {
     "type": "minecraft:add",
     "argument1": {
-      "type": "minecraft:mul",
+      "type": "minecraft:add",
       "argument1": {
-        "type": "minecraft:add",
-        "argument1": "terrain_dimension:my_dimension/height_gen",
-        "argument2": "terrain_dimension:my_dimension/roughness_gen"
+        "type": "minecraft:mul",
+        "argument1": {
+          "type": "minecraft:add",
+          "argument1": "terrain_dimension:my_dimension/height_gen",
+          "argument2": "terrain_dimension:my_dimension/roughness_gen"
+        },
+        "argument2": "terrain_dimension:my_dimension/ruggedness_gen_factor"
       },
-      "argument2": "terrain_dimension:my_dimension/ruggedness_gen_factor"
+      "argument2": {
+        "type": "minecraft:y_clamped_gradient",
+        "from_y": 0,
+        "to_y": 384,
+        "from_value": 0.8,
+        "to_value": -0.8
+      }
     },
-    "argument2": {
-      "type": "minecraft:y_clamped_gradient",
-      "from_y": 0,
-      "to_y": 512,
-      "from_value": 0.8,
-      "to_value": -0.8
-    }
+    "argument2": -0.25
   },
   "argument2": "terrain_dimension:my_dimension/floor_guarantee"
 }

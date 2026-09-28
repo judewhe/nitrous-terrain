@@ -1,5 +1,5 @@
 {
-  "sea_level": 64,
+  "sea_level": 96,
   "disable_mob_generation": false,
   "aquifers_enabled": false,
   "ore_veins_enabled": false,
@@ -37,7 +37,7 @@
     "depth": {
       "type": "minecraft:y_clamped_gradient",
       "from_y": 0,
-      "to_y": 512,
+      "to_y": 384,
       "from_value": 1.0,
       "to_value": -1.0
     },
@@ -79,7 +79,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:grass_block"
+            "Name": "minecraft:stone"
           }
         }
       },

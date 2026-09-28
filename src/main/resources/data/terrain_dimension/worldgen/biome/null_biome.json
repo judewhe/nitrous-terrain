@@ -2,8 +2,10 @@
   "has_precipitation": false,
   "temperature": 0.5,
   "downfall": 0.5,
+  "attributes": {
+    "minecraft:visual/sky_color": "#79a6ff"
+  },
   "effects": {
-    "sky_color": 7972607,
     "fog_color": 12638463,
     "water_color": 4159204,
     "water_fog_color": 2362765,

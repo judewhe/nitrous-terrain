@@ -1,6 +1,6 @@
 {
   "type": "minecraft:noise",
   "noise": "terrain_dimension:my_dimension/ruggedness_gen_noise",
-  "xz_scale": 0.15,
+  "xz_scale": 0.25,
   "y_scale": 0.0
 }
