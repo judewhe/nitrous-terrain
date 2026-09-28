@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:spline",
+  "spline": {
+    "coordinate": "terrain_dimension:my_dimension/terrain_shape",
+    "points": [
+      { "location": 0.0, "value": 0.0,  "derivative": 0.5 },
+      { "location": 0.5, "value": 0.2,  "derivative": 0.6 },
+      { "location": 1.0, "value": 0.55, "derivative": 0.8 },
+      { "location": 1.5, "value": 0.95, "derivative": 0.8 },
+      { "location": 2.5, "value": 1.12, "derivative": 0.1 },
+      { "location": 3.5, "value": 1.15, "derivative": 0.0 }
+    ]
+  }
+}

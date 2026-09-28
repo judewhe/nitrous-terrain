@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:clamp",
+  "input": "terrain_dimension:my_dimension/terrain_shape_sharp",
+  "min": -0.3,
+  "max": 1.15
+}
