@@ -49,46 +49,45 @@
     "sequence": [
       {
         "type": "minecraft:condition",
-        "if_true": {
-          "type": "minecraft:not",
-          "invert": {
-            "type": "minecraft:y_above",
-            "anchor": {
-              "absolute": 1
-            },
-            "surface_depth_multiplier": 0,
-            "add_stone_depth": false
-          }
-        },
+        "if_true": { "type": "minecraft:not", "invert": { "type": "minecraft:y_above", "anchor": { "absolute": 1 }, "surface_depth_multiplier": 0, "add_stone_depth": false } },
+        "then_run": { "type": "minecraft:block", "result_state": { "Name": "minecraft:bedrock" } }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": { "type": "minecraft:steep" },
         "then_run": {
-          "type": "minecraft:block",
-          "result_state": {
-            "Name": "minecraft:bedrock"
-          }
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:noise_threshold",
+                "noise": "terrain_dimension:my_dimension/rock_patch_noise",
+                "min_threshold": 0.0,
+                "max_threshold": 1.0
+              },
+              "then_run": { "type": "minecraft:block", "result_state": { "Name": "minecraft:deepslate" } }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:noise_threshold",
+                "noise": "terrain_dimension:my_dimension/rock_patch_noise",
+                "min_threshold": -0.3,
+                "max_threshold": 0.0
+              },
+              "then_run": { "type": "minecraft:block", "result_state": { "Name": "minecraft:tuff" } }
+            },
+            { "type": "minecraft:block", "result_state": { "Name": "minecraft:stone" } }
+          ]
         }
       },
       {
         "type": "minecraft:condition",
-        "if_true": {
-          "type": "minecraft:stone_depth",
-          "offset": 0,
-          "surface_type": "floor",
-          "secondary_depth_range": 3,
-          "add_surface_depth": true
-        },
-        "then_run": {
-          "type": "minecraft:block",
-          "result_state": {
-            "Name": "minecraft:stone"
-          }
-        }
+        "if_true": { "type": "minecraft:stone_depth", "offset": 0, "surface_type": "floor", "add_surface_depth": true, "secondary_depth_range": 0 },
+        "then_run": { "type": "minecraft:block", "result_state": { "Name": "minecraft:grass_block" } }
       },
-      {
-        "type": "minecraft:block",
-        "result_state": {
-          "Name": "minecraft:stone"
-        }
-      }
+      { "type": "minecraft:block", "result_state": { "Name": "minecraft:stone" } }
     ]
   }
 }
